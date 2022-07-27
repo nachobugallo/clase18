@@ -7,14 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{users1.name}}</h1>
-    <h2>{{users1.wager}}</h2>
-    <h2>{{users1.creation_date}}</h2>
-    <h1>{{users2.name}}</h1>
-    <h2>{{users2.wager}}</h2>
-    <h2>{{users2.creation_date}}</h2>
-    <h1>{{users3.name}}</h1>
-    <h2>{{users3.wager}}</h2>
-    <h2>{{users3.creation_date}}</h2>
+    {% for user in users %}
+    <h1>{{user.name}}</h1>
+    <h2>{{user.wager}}</h2>
+    <h2>{{user.creation_date}}</h2>
+    {% endfor %}
 </body>
 </html>
