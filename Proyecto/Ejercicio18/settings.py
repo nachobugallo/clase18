@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Ejercicio18',
     'blog',
-    'AppsMVT'
+    'Personas'
 ]
 
 MIDDLEWARE = [
