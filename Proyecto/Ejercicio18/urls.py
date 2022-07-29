@@ -18,9 +18,13 @@ from django.urls import path
 
 from Personas.views import create_perfil
 from Personas.views import lista_perfiles
+from Personas.views import introduccion
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', introduccion),
+    path('inicio/', introduccion),
     path('empleados/', lista_perfiles),
     path('nuevo_empleado/', create_perfil)
 ]

@@ -17,3 +17,8 @@ def lista_perfiles(request):
         'plantel': nomina
     }
     return render (request,'lista-perfil.html',context=context)
+
+def introduccion(request):
+    saludo = str("Bienvenido")
+    context={'introduccion1':saludo}
+    return render (request, 'inicio.html', context=context)
